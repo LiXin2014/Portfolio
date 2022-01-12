@@ -1,3 +1,74 @@
+:root {
+    --heading-color: #4F4F4F;
+    --light-text-color: #828282;
+    --extra-light: #E0E0E0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background: green;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #333333;
+    background: #f2f2f2;
+}
+
+#app {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*style for personal profile*/
+.personal-profile {
+    gap: 20px;
+    background: white;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.personal-profile img {
+    height: 200px;
+    border-radius: 12px;
+}
+
+.personal-profile .namecontact {
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.personal-profile .name {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.personal-profile .info {
+    color: var(--light-text-color);
+}
+
+.personal-profile .contact {
+    color: var(--heading-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personal-profile .contact span {
+    margin-right: 5px;
+}
+
+.personal-profile .name, .personal-profile .email {
+    margin-bottom: 10px;
 }
