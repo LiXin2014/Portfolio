@@ -30,12 +30,18 @@ body {
     justify-content: center;
 }
 
+.card {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: white;
+    border-radius: 12px;
+}
+
+
 /*style for personal profile*/
 .personal-profile {
     gap: 20px;
-    background: white;
-    border-radius: 12px;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
 .personal-profile img {
@@ -71,4 +77,65 @@ body {
 
 .personal-profile .name, .personal-profile .email {
     margin-bottom: 10px;
+}
+
+.mainSection {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+
+    gap: 20px;
+}
+
+/*style for skills*/
+.skills {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+    padding: 30px;
+}
+
+.skills .title{
+    color: var(--heading-color);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 16px;
+}
+
+/* style for hobbies*/
+.hobbies {
+    grid-column: 1 / span 4;
+    grid-row: 3 / span 9;
+    padding: 30px;
+}
+
+.hobbies .title {
+    color: var(--heading-color);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hobbies img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.hobbies .hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.hobbies .hobby .name {
+    align-self: flex-start;
 }

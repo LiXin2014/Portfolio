@@ -4,10 +4,20 @@ import './index.css';
 import config from './data.json';
 
 import { PersonalCard } from "./components/PersonalCard";
+import { Skills } from "./components/Skills";
+import { Hobbies } from "./components/Hobbies";
 
 class App extends React.Component {
     render() {
-        return <PersonalCard {...config.personal} />
+        return (
+            <React.Fragment>
+                <PersonalCard {...config.personal} />
+                <div className="mainSection">
+                    <Skills skills = {config.skills}/>
+                    <Hobbies hobbies = {config.hobbies} />
+                </div>
+            </React.Fragment>
+        )
     }
 }
 
