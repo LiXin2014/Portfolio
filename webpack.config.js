@@ -12,12 +12,13 @@ module.exports = {
             { test: /\.(js)$/, use: 'babel-loader' },
             { test: /\.css$/, use: ['style-loader', 'css-loader'] },
             {
-                test: /\.jpg/,
+                test: /\.(jpg|png)$/,
                 type: 'asset/resource'
               }
         ]
     },
     mode: 'development',
+    devtool:"inline-source-map",
     plugins: [
         new HtmlWebpackPlugin({
             template: 'app/index.html'

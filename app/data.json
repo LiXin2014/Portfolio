@@ -6,5 +6,28 @@
         "phone": "(812)650-2472",
         "description": "Self-driven developer, who is passionate to learn and create outstanding applications."
     },
-    "skills": ["React", "Javascript", "CSS", "C#", "SQL"]
+    "skills": ["React", "Javascript", "CSS", "C#", "SQL"],
+    "experiences": [
+        {
+            "company": "microsoft",
+            "time": "Jun 2018 - Present",
+            "title": "Software Engineer II",
+            "accomplishments": [
+                "Implemented various UI controls with React and Redux in Azure DevOps (formerly Visual Studio Team Services)",
+                "Implemented Counters Tool in Visual Studio Profiling, it allows .Net developers to observe performance counter values easier with better readability and visualization",
+                "Refactor backend of Visual Studio from native to managed with teammates.",
+                "Implemented autocomplete, flamechart that used across Visaul Studio Profiling tools, refactored several controls so they can be used across tools."
+            ]
+        },
+        {
+            "company": "wolfram",
+            "time": "Nov 2015 - May 2018",
+            "title": "Software Engineer",
+            "accomplishments": [
+                "Re-Implemented DatabinAdd API in Java.",
+                "Performed code optimization for cloud back-end.",
+                "Fixed bugs and reviewed pull requests for cloud release 1.38 – 1.46."
+            ]
+        }
+    ]
 }

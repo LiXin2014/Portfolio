@@ -6,6 +6,7 @@ import config from './data.json';
 import { PersonalCard } from "./components/PersonalCard";
 import { Skills } from "./components/Skills";
 import { Hobbies } from "./components/Hobbies";
+import { Experiences } from "./components/Experiences";
 
 class App extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class App extends React.Component {
                 <div className="mainSection">
                     <Skills skills = {config.skills}/>
                     <Hobbies hobbies = {config.hobbies} />
+                    <Experiences experiences = {config.experiences}/>
                 </div>
             </React.Fragment>
         )
