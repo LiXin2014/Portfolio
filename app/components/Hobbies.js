@@ -6,7 +6,7 @@ import readingImg from "../img/reading.jpg";
 export function Hobbies(props) {
     return (
         <div className="hobbies card">
-            <div className="title">Hobbies</div>
+            <div className="header">Hobbies</div>
             <div className="hobby">
                 <img src={bakingImg} />
                 <div className="name">Baking</div>

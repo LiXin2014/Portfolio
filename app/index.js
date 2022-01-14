@@ -7,6 +7,7 @@ import { PersonalCard } from "./components/PersonalCard";
 import { Skills } from "./components/Skills";
 import { Hobbies } from "./components/Hobbies";
 import { Experiences } from "./components/Experiences";
+import { Education } from "./components/Education";
 
 class App extends React.Component {
     render() {
@@ -17,6 +18,7 @@ class App extends React.Component {
                     <Skills skills = {config.skills}/>
                     <Hobbies hobbies = {config.hobbies} />
                     <Experiences experiences = {config.experiences}/>
+                    <Education education = {config.education} />
                 </div>
             </React.Fragment>
         )
