@@ -1,4 +1,5 @@
 import React from "react";
+import "./experiences.css";
 
 export function Experiences(props) {
     return (

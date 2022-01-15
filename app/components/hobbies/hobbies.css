@@ -1,0 +1,18 @@
+.hobbies {
+    grid-column: 1 / span 4;
+    grid-row: 2 / span 2;
+}
+
+.hobbies img {
+    width: 80%;
+    border-radius: 12px;
+}
+
+.hobbies .hobby {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 10px;
+    margin-bottom: 30px;
+}

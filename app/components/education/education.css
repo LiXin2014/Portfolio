@@ -1,0 +1,25 @@
+.educations {
+    grid-column: 5 / span 8;
+    grid-row: 3 / span 1;
+}
+
+.educations img {
+    width: 70px;
+    height: 70px;
+}
+
+.educations .education {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.educations .name {
+    font-size: 20px;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.educations .time {
+    color: var(--light-text-color);
+}

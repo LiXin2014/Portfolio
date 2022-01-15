@@ -1,0 +1,13 @@
+.skills {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 1;
+}
+
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    font-size: 16px;
+}

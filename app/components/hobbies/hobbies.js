@@ -1,4 +1,5 @@
 import React from "react";
+import "./hobbies.css";
 
 export function Hobbies(props) {
     return (

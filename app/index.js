@@ -2,11 +2,11 @@ import React from "react";
 import ReactDom from "react-dom";
 import './index.css';
 
-import { PersonalCard } from "./components/PersonalCard";
-import { Skills } from "./components/Skills";
-import { Hobbies } from "./components/Hobbies";
-import { Experiences } from "./components/Experiences";
-import { Education } from "./components/Education";
+import { PersonalCard } from "./components/personalCard/personalCard";
+import { Skills } from "./components/skills/skills";
+import { Hobbies } from "./components/hobbies/hobbies";
+import { Experiences } from "./components/experiences/experiences";
+import { Education } from "./components/education/education";
 import { personal, skills, hobbies, experiences, education, projects } from "./components/data";
 
 class App extends React.Component {

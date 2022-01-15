@@ -1,4 +1,5 @@
 import React from "react";
+import "./skills.css";
 
 export function Skills(props) {
     return (

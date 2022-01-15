@@ -1,0 +1,41 @@
+.experiences {
+    grid-column: 5 / span 8;
+    grid-row: 1 / span 2;
+}
+
+.experiences .title {
+    font-size: 20px;
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+.experiences .time, .experience .name, .educations .description {
+    font-size: 14px;
+    color: var(--light-text-color);
+    margin-bottom: 10px;
+}
+
+.experience .name {
+    margin-bottom: 30px;
+}
+
+.experiences .experience {
+    display: flex;
+    gap: 20px;
+
+    margin-bottom: 20px;
+}
+
+.experiences .accomplishments {
+    color: var(--light-text-color);
+}
+
+.experiences li {
+    list-style-type: '- ';
+    margin-bottom: 10px;
+}
+
+.experiences img {
+    width: 70px;
+    height: 70px;
+}

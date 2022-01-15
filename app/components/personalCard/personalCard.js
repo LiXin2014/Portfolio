@@ -1,4 +1,5 @@
 import React from "react";
+import "./personalCard.css";
 
 export function PersonalCard(props) {
     return (
