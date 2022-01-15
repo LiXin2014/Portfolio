@@ -1,15 +1,38 @@
-{
-    "personal": {
+import bakingImg from "../img/baking.jpg";
+import hikingImg from "../img/hiking.jpg";
+import readingImg from "../img/reading.jpg";
+import microsoftIcon from "../img/microsoft.png";
+import wolframIcon from "../img/wolfram.png";
+import IUlogo from "../img/IUlogo.jpg";
+import BeiJiaologo from "../img/BJlogo.png";
+
+export function personal() {
+    return {
         "name": "Xin Li",
         "title": "Software Engineer 2",
         "email": "xinli601@gmail.com",
-        "phone": "(812)650-2472",
+        "phone": "(865)642-2456",
         "description": "Self-driven developer, who is passionate to learn and create outstanding applications."
-    },
-    "skills": ["React", "Javascript", "CSS", "C#", "SQL"],
-    "experiences": [
+    }
+}
+
+export function skills() {
+    return ["React", "Javascript", "CSS", "C#", "SQL"];
+}
+
+export function hobbies() {
+    return [
+        {"imgSource": bakingImg, "name": "Baking"},
+        {"imgSource": hikingImg, "name": "Hiking"},
+        {"imgSource": readingImg, "name": "Readomg"}
+    ]
+}
+
+export function experiences() {
+    return [
         {
             "company": "microsoft",
+            "icon": microsoftIcon,
             "time": "Jun 2018 - Present",
             "title": "Software Engineer II",
             "accomplishments": [
@@ -21,6 +44,7 @@
         },
         {
             "company": "wolfram",
+            "icon": wolframIcon,
             "time": "Nov 2015 - May 2018",
             "title": "Software Engineer",
             "accomplishments": [
@@ -29,17 +53,31 @@
                 "Fixed bugs and reviewed pull requests for cloud release 1.38 – 1.46."
             ]
         }
-    ],
-    "education": [
+    ]
+}
+
+export function education() {
+    return [
         {
             "school": "Indiana University - Bloomington",
+            "logo": IUlogo,
             "description": "Masters, Computer Science, 3.6/4.0",
             "time": "2012 - 2014"
         },
         {
             "school": "Beijing Jiaotong University",
+            "logo": BeiJiaologo,
             "description": "Bachelor's, Computer Science, 3.53/4.0",
             "time": "2008 - 2012"
         }
     ]
+}
+
+export function projects() {
+    return {
+        "Responsive": 
+            [
+                {}
+            ]
+    }
 }

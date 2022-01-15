@@ -1,15 +1,13 @@
 import React from "react";
-import microsoftIcon from "../img/microsoft.png";
-import wolframIcon from "../img/wolfram.png";
 
 export function Experiences(props) {
     return (
         <div className="experiences card">
             <div className="header">Experiences</div>
 
-            {props.experiences.map((experience, index) => (
+            {props.experiences.map((experience) => (
                 <div className="experience">
-                    <img src={index === 0 ? microsoftIcon : wolframIcon} />
+                    <img src={experience.icon} />
                     <div className="info">
                         <div className="time">{experience.time}</div>
                         <div className="title">{experience.title}</div>
