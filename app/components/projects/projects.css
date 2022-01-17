@@ -1,0 +1,26 @@
+.projectsNav {
+    margin-top: 20px;
+}
+
+.title {
+    color: #4F4F4F;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.projectsCategory button {
+    border: none;
+    padding: 8px 22px;
+    border: 1px solid #4F4F4F;
+    border-radius: 12px;
+    color: #4F4F4F;
+    font-size: 14px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.projectsCategory .selected {
+    background: #2F80ED;
+    color: white;
+    border: #2F80ED;
+}

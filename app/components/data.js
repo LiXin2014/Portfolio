@@ -78,6 +78,14 @@ export function projects() {
         "Responsive": 
             [
                 {}
+            ],
+        "Front End":
+            [
+                {}
+            ],
+        "Full Stack":
+            [
+                {}
             ]
     }
 }

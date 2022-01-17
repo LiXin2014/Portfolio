@@ -8,6 +8,7 @@ import { Hobbies } from "./components/hobbies/hobbies";
 import { Experiences } from "./components/experiences/experiences";
 import { Education } from "./components/education/education";
 import { personal, skills, hobbies, experiences, education, projects } from "./components/data";
+import { Projects } from "./components/projects/projects";
 
 class App extends React.Component {
     render() {
@@ -20,6 +21,7 @@ class App extends React.Component {
                     <Experiences experiences = {experiences()}/>
                     <Education education = {education()} />
                 </div>
+                <Projects projects = {projects()}/>
             </React.Fragment>
         )
     }
