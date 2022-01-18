@@ -6,6 +6,11 @@ import wolframIcon from "../img/wolfram.png";
 import IUlogo from "../img/IUlogo.jpg";
 import BeiJiaologo from "../img/BJlogo.png";
 
+import notFound from "../img/404NotFound.png";
+import myTeamPage from "../img/MyTeamPage.png";
+import interiorConsultant from "../img/InteriorConsultant.png";
+import recipePage from "../img/RecipePage.png";
+
 export function personal() {
     return {
         "name": "Xin Li",
@@ -17,14 +22,14 @@ export function personal() {
 }
 
 export function skills() {
-    return ["React", "Javascript", "CSS", "C#", "SQL"];
+    return ["React", "Javascript", "CSS", "C Sharp", "SQL"];
 }
 
 export function hobbies() {
     return [
-        {"imgSource": bakingImg, "name": "Baking"},
-        {"imgSource": hikingImg, "name": "Hiking"},
-        {"imgSource": readingImg, "name": "Readomg"}
+        { "imgSource": bakingImg, "name": "Baking" },
+        { "imgSource": hikingImg, "name": "Hiking" },
+        { "imgSource": readingImg, "name": "Reading" }
     ]
 }
 
@@ -75,9 +80,64 @@ export function education() {
 
 export function projects() {
     return {
-        "Responsive": 
+        "Responsive":
             [
-                {}
+                {
+                    "name": "404 Not Found",
+                    "img": notFound,
+                    "skills": ["HTML", "CSS"],
+                    "description": "Built a responsive 404 page with HTML and CSS. Practiced using grid, flexbox layout and media query to build a responsive page.",
+                    "demoURL": "https://keen-shannon-522a3e.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/404NotFound_DevChallenge"
+                },
+                {
+                    "name": "My Team Page",
+                    "img": myTeamPage,
+                    "skills": ["HTML", "CSS"],
+                    "description": "Built a reponsive team members intro page with HTML and CSS.",
+                    "demoURL": "https://focused-kirch-d97a0d.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/MyTeamPage_DevChallenge"
+                },
+                {
+                    "name": "Interior Consultant",
+                    "img": interiorConsultant,
+                    "skills": ["HTML", "JavaScript"],
+                    "description": "Built a responsive interior consultant page with HTML, CSS, and JavaScript.",
+                    "demoURL": "https://agitated-liskov-59589b.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/InteriorConsultant_DevChallenge"
+                },
+                {
+                    "name": "RecipePage",
+                    "img": recipePage,
+                    "skills": ["HTML", "CSS"],
+                    "description": "Built a responsive Recipe Page with HTML, CSS, and JavaScript.",
+                    "demoURL": "https://suspicious-swanson-0c022c.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/RecipePage_DevChallenge"
+                },
+                {
+                    "name": "404 Not Found",
+                    "img": notFound,
+                    "skills": ["HTML", "CSS"],
+                    "description": "Built a responsive 404 page with HTML and CSS. Practiced using grid, flexbox layout and media query to build a responsive page.",
+                    "demoURL": "https://keen-shannon-522a3e.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/404NotFound_DevChallenge"
+                },
+                {
+                    "name": "404 Not Found",
+                    "img": notFound,
+                    "skills": ["HTML", "CSS"],
+                    "description": "Built a responsive 404 page with HTML and CSS. Practiced using grid, flexbox layout and media query to build a responsive page.",
+                    "demoURL": "https://keen-shannon-522a3e.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/404NotFound_DevChallenge"
+                },
+                {
+                    "name": "404 Not Found",
+                    "img": notFound,
+                    "skills": ["HTML", "CSS"],
+                    "description": "Built a responsive 404 page with HTML and CSS. Practiced using grid, flexbox layout and media query to build a responsive page.",
+                    "demoURL": "https://keen-shannon-522a3e.netlify.app/",
+                    "codeURL": "https://github.com/LiXin2014/404NotFound_DevChallenge"
+                }
             ],
         "Front End":
             [

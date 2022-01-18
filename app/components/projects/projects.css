@@ -1,5 +1,5 @@
 .projectsNav {
-    margin-top: 20px;
+    margin: 20px 0px;
 }
 
 .title {
@@ -23,4 +23,65 @@
     background: #2F80ED;
     color: white;
     border: #2F80ED;
+}
+
+.projectCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.projectCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.projectCard .tags {
+    color: var(--light-text-color);
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.projectCard .tags span {
+    margin-right: 9px;
+}
+
+.projectCard .name {
+    font-size: 24px;
+    margin: 20px 0px;
+}
+
+.projectCard .description {
+    color: var(--light-text-color);
+    flex-grow: 1;
+    padding-bottom: 30px;
+}
+
+.projectCard .links {
+    margin-top: 20px;
+}
+
+.projectCard .links a {
+    border: none;
+    border: 1px solid #2F80ED;
+    border-radius: 12px;
+
+    padding: 12px 35px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.projectCard .links .code {
+    color: #2F80ED;
+}
+
+.projectCard .links .demo {
+    background: #2F80ED;
+    color: white;
 }
