@@ -50,3 +50,10 @@ body {
 
     gap: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .mainSection {
+        display: flex;
+        flex-direction: column;
+    }
+}

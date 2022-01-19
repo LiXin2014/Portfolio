@@ -38,3 +38,9 @@
 .personal-profile .name, .personal-profile .email {
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 610px) {
+    .flex-center {
+        display: block;
+    }
+}

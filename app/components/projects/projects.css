@@ -85,3 +85,21 @@
     background: #2F80ED;
     color: white;
 }
+
+@media screen and (max-width: 1024px) {
+    .projectCard .links a {
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .projectCards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projectCard img {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
