@@ -1,6 +1,8 @@
 import React from "react";
 import "./projects.css";
 import "../../index.css";
+import { Pagination } from "../pagination/pagination";
+import * as Constants from "../constants";
 
 function ProjectsNav(props) {
     const {projectCategories, selected, onSelectionChanged} = props;
@@ -45,9 +47,11 @@ export class Projects extends React.Component {
         this.projects = this.props.projects;
         this.projectCategories = Object.keys(this.projects);
         this.state = {
-            selectedCategory: "Responsive"
+            selectedCategory: "Responsive",
+            currentPage: 1
         }
         this.onCategoryChanged = this.onCategoryChanged.bind(this);
+        this.onPageChanged = this.onPageChanged.bind(this);
     }
 
     render() {
@@ -58,15 +62,26 @@ export class Projects extends React.Component {
                     selected={this.state.selectedCategory} 
                     onSelectionChanged = {this.onCategoryChanged}/>
                 <div className="projectCards">
-                    {this.projects[this.state.selectedCategory].map(project => (
-                        <ProjectCard {...project}/>
+                    {this.projects[this.state.selectedCategory]
+                        .slice((this.state.currentPage - 1) * Constants.NumPerPage, this.state.currentPage * Constants.NumPerPage)
+                        .map(project => (
+                            <ProjectCard {...project}/>
                     ))}
                 </div>
+                <Pagination 
+                    currentPage={this.state.currentPage}
+                    numPerPage={Constants.NumPerPage} 
+                    projects={this.projects[this.state.selectedCategory]}
+                    onPageChanged = {this.onPageChanged}/>
             </div>)
     }
 
     onCategoryChanged(newCategory) {
-        this.setState({selectedCategory: newCategory});
+        this.setState({selectedCategory: newCategory, currentPage: 1});
+    }
+
+    onPageChanged(newPage) {
+        this.setState({currentPage: newPage});
     }
 }
 
