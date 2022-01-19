@@ -2,7 +2,6 @@ import React from "react";
 import "./projects.css";
 import "../../index.css";
 import { Pagination } from "../pagination/pagination";
-import * as Constants from "../constants";
 
 function ProjectsNav(props) {
     const {projectCategories, selected, onSelectionChanged} = props;
@@ -49,8 +48,11 @@ export class Projects extends React.Component {
         this.projectCategories = Object.keys(this.projects);
         this.state = {
             selectedCategory: "Responsive",
-            currentPage: 1
+            currentPage: 1, 
+            numPerPage: 3
         }
+
+        window.addEventListener("resize", this.onWindowResize.bind(this));
         this.onCategoryChanged = this.onCategoryChanged.bind(this);
         this.onPageChanged = this.onPageChanged.bind(this);
     }
@@ -64,14 +66,14 @@ export class Projects extends React.Component {
                     onSelectionChanged = {this.onCategoryChanged}/>
                 <div className="projectCards">
                     {this.projects[this.state.selectedCategory]
-                        .slice((this.state.currentPage - 1) * Constants.NumPerPage, this.state.currentPage * Constants.NumPerPage)
+                        .slice((this.state.currentPage - 1) * this.state.numPerPage, this.state.currentPage * this.state.numPerPage)
                         .map(project => (
                             <ProjectCard {...project} key={project.name}/>
                     ))}
                 </div>
                 <Pagination 
                     currentPage={this.state.currentPage}
-                    numPerPage={Constants.NumPerPage} 
+                    numPerPage={this.state.numPerPage} 
                     projects={this.projects[this.state.selectedCategory]}
                     onPageChanged = {this.onPageChanged}/>
             </div>)
@@ -83,6 +85,14 @@ export class Projects extends React.Component {
 
     onPageChanged(newPage) {
         this.setState({currentPage: newPage});
+    }
+
+    onWindowResize() {
+        if( window.innerWidth <= 768 && this.state.numPerPage === 3 ) {
+            this.setState({numPerPage: 1});
+        } else if( window.innerWidth > 768 && this.state.numPerPage === 1 ) {
+            this.setState({numPerPage: 3});
+        }
     }
 }
 
