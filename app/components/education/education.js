@@ -6,7 +6,7 @@ export function Education(props) {
         <div className="educations card">
             <div className="header">Education</div>
             {props.education.map((eachEducation) => (
-                <div className="education">
+                <div className="education" key={eachEducation.time}>
                     <img src={eachEducation.logo} />
                     <div className="info">
                         <div className="name">{eachEducation.school}</div>

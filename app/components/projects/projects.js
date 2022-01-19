@@ -14,6 +14,7 @@ function ProjectsNav(props) {
                     <button 
                         className={`${selected === category ? "selected" : ""}` }
                         onClick={() => onSelectionChanged(category)}
+                        key={category}
                     >{category}</button>
                 ))}
             </div>
@@ -28,7 +29,7 @@ function ProjectCard(props) {
             <img src={img} />
             <div className="tags">
                 {skills.map(skill => (
-                    <span>{`#${skill}`}</span>
+                    <span key={skill}>{`#${skill}`}</span>
                 ))}
             </div>
             <div className="name">{name}</div>
@@ -65,7 +66,7 @@ export class Projects extends React.Component {
                     {this.projects[this.state.selectedCategory]
                         .slice((this.state.currentPage - 1) * Constants.NumPerPage, this.state.currentPage * Constants.NumPerPage)
                         .map(project => (
-                            <ProjectCard {...project}/>
+                            <ProjectCard {...project} key={project.name}/>
                     ))}
                 </div>
                 <Pagination 

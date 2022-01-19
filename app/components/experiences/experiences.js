@@ -7,15 +7,15 @@ export function Experiences(props) {
             <div className="header">Experiences</div>
 
             {props.experiences.map((experience) => (
-                <div className="experience">
+                <div className="experience" key={experience.time}>
                     <img src={experience.icon} />
                     <div className="info">
                         <div className="time">{experience.time}</div>
                         <div className="title">{experience.title}</div>
                         <div className="name">{experience.company}</div>
                         <ul className="accomplishments">
-                            {experience.accomplishments.map(task => (
-                                <li className="task">{task}</li>
+                            {experience.accomplishments.map((task, index) => (
+                                <li className="task" key={index}>{task}</li>
                             ))}
                         </ul>
                     </div>

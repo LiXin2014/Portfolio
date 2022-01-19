@@ -7,7 +7,7 @@ export function Hobbies(props) {
             <div className="header">Hobbies</div>
 
             {props.hobbies.map(hobby => (
-                <div className="hobby">
+                <div className="hobby" key={hobby.name}>
                     <img src={hobby.imgSource} />
                     <div className="name">{hobby.name}</div>
                 </div>
