@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://objective-goldwasser-d804f6.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/LiXin2014/Portfolio">
       Solution
     </a>
     <span> | </span>
@@ -54,7 +54,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone git@github.com:LiXin2014/EdieHomepage_DevChallenge.git
+$ git clone git@github.com:LiXin2014/Portfolio.git
 
 # Install dependencies
 $ npm install
